@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acessa o portfólio oficial do Robilson Vasco">
+
+
+
+    <meta name="keywords" content="mini site, criador de conteúdo, link na bio, portfólio digital, Instagram, TikTok, redes sociais, visibilidade online, promoção digital, marketing pessoal, link único, apresentação online, criador de conteúdos Angola, site para influencers, página pessoal online, tráfego para redes sociais, site responsivo, Betinhas, Influenciador, Facebook, Link Pro">
+    <meta name="author" content="Robilson Vasco">
+    <meta name="robots" content="index, follow">
+
+
+      <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="Robilson Vasco">
+    <meta property="og:description" content="Acessa o portfólio oficial do Robilson Vasco.">
+    <meta property="og:image" content="https://https://robilsonvasco.vercel.app/perfil.jpg"> <!-- imagem de destaque -->
+    <meta property="og:url" content="https://https://robilsonvasco.vercel.app/">
+    <meta property="og:type" content="website">
+
+
+                                 <!-- CSS -->
+                 <link rel="stylesheet" href="william.css">
+
+                                 <!-- Font -->
+        <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                                <!-- Favicon -->
+        <link rel="shortcut icon" href="link_80px.png" type="image/x-icon">
+
+
+
+
+
+ <title>Robilson Vasco</title>
+<body>
+  
+       <!-- Home Section -->
+
+
+
+
+    <section class="header" id="inicio">
+
+        <div class="badge-parceiro">
+            <span>Top Influencer</span>
+        </div>
+      
+        <div class="particles" id="particles"></div>
+
+        <div class="glowing-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+
+       
+
+        <img src="perfil.jpg" alt="Foto do Usuário" class="profile" />
+       
+        <h1 class="user-name"> Robilson Vasco</h1>
+        <p class="user-title">Agente Musical - Empresário</p>
+       
+       
+       
+    </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+                              <!-- Sobre Section -->
+
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="sobre.jpg" alt="Sobre mim">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre Mim</h2>
+                    <p id="typewriter"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Robilson Vasco - Todos os direitos reservados.</p>
+        </div>
+
+        <div class="credito">
+            Desenvolvido por <a href="https://wa.me/244936584701?text=Olá!%20Vi%20 seu %20trabalho%20e%20gostaria%20de%20solicitar%20meu%20Portfólio%20agora." target="_blank">William Nott</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              <script src="script.js"></script>
+                            <script src="particulas.js"></script>
+
+
+
+
+
+
+
+    <script>
+
+        
+        
+
+
+        
+        function showRandomNotification() {
+        const notif = document.getElementById('fakeNotification');
+        const content = document.getElementById('notificationContent');
+      
+        // Mensagem aleatória
+        const randomMessage = fakeMessages[Math.floor(Math.random() * fakeMessages.length)];
+      
+        content.innerHTML = `<strong>${randomMessage}</strong><span>agora mesmo</span>`;
+      
+        notif.style.opacity = '1';
+        notif.style.transform = 'translateY(0)';
+
+        setTimeout(() => {
+          notif.style.opacity = '0';
+          notif.style.transform = 'translateY(60px)';
+        }, 5000);
+      }
+
+      // Dispara a cada 15-30 segundos
+      setInterval(() => {
+        if (Math.random() > 0.5) showRandomNotification();
+      }, 15000);
+
+
+      
+
+
+        // Adicionando efeito sonoro futurista ao clicar nos itens do menu
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                // Criar efeito de partículas
+                const particles = document.createElement('div');
+                particles.style.position = 'absolute';
+                particles.style.width = '10px';
+                particles.style.height = '10px';
+                particles.style.background = 'radial-gradient(#00f7ff, transparent)';
+                particles.style.borderRadius = '50%';
+                particles.style.pointerEvents = 'none';
+               
+                const rect = this.getBoundingClientRect();
+                particles.style.left = (rect.left + rect.width/2 - 5) + 'px';
+                particles.style.top = (rect.top + rect.height/2 - 5) + 'px';
+               
+                document.body.appendChild(particles);
+               
+                // Animação das partículas
+                const animation = particles.animate([
+                    { transform: 'scale(1)', opacity: 1 },
+                    { transform: 'scale(3)', opacity: 0 }
+                ], {
+                    duration: 800,
+                    easing: 'ease-out'
+                });
+               
+                animation.onfinish = () => {
+                    particles.remove();
+                };
+               
+                // Para o link "Home" que é uma âncora, evitar comportamento padrão
+                if (this.getAttribute('href') === '#home') {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const testimonialsContainer = document.querySelector('.testimonials-container');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const dots = document.querySelectorAll('.dot');
+           
+            let currentIndex = 0;
+            const cardCount = testimonialCards.length;
+           
+            // Função para atualizar o carrossel
+            function updateCarousel() {
+                testimonialsContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+               
+                // Atualizar dots ativos
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+           
+            // Event listeners para os botões de navegação
+            nextBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % cardCount;
+                updateCarousel();
+            });
+           
+            prevBtn.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+                updateCarousel();
+            });
+           
+            // Event listeners para os dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    currentIndex = parseInt(this.getAttribute('data-index'));
+                    updateCarousel();
+                });
+            });
+           
+            // Navegação por teclado
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % cardCount;
+                    updateCarousel();
+                } else if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + cardCount) % cardCount;
+                    updateCarousel();
+                }
+            });
+           
+            // Navegação automática (opcional)
+            let autoSlide = setInterval(() => {
+                currentIndex = (currentIndex + 1) % cardCount;
+                updateCarousel();
+            }, 5000);
+           
+            // Pausar a navegação automática quando o mouse estiver sobre o carrossel
+            const testimonials = document.querySelector('.testimonials');
+            testimonials.addEventListener('mouseenter', () => {
+                clearInterval(autoSlide);
+            });
+           
+            testimonials.addEventListener('mouseleave', () => {
+                autoSlide = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % cardCount;
+                    updateCarousel();
+                }, 5000);
+            });
+        });
+
+
+
+
+        // Efeito de digitação para o título
+        document.addEventListener('DOMContentLoaded', function() {
+            const titles = document.querySelectorAll('.user-title, .section-title');
+           
+            // Animação de aparição dos elementos ao scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+           
+            // Aplicar estilos iniciais e observar os elementos
+            document.querySelectorAll('.profile-img, .user-name, .user-title, .social-links, .card, .gallery-item, .about-img, .about-text, .portfolio-caixa').forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(el);
+            });
+        });
+
+
+
+
+
+        // const usersOnline = Math.floor(Math.random() * 50) + 1;
+        // const onlineDiv = document.createElement("div");
+        // onlineDiv.innerText = `${usersOnline} pessoas Acessaram o site agora 🔵`;
+        // Object.assign(onlineDiv.style, {
+        //     position: "fixed", bottom: "10px", left: "10px",
+        //     background: "#111", color: "#0f0", padding: "8px 14px",
+        //     borderRadius: "8px", fontSize: "14px", zIndex: 9999
+        // });
+        // document.body.appendChild(onlineDiv);
+
+
+    </script>
+</body>
+</html>
